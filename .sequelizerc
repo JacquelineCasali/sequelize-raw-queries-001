@@ -1,0 +1,15 @@
+//configuração de pasta e arquivo para configurar banco de dados
+
+const path = require("path");
+
+module.exports = {
+ //config configuração do banco de dados
+     config: path.resolve("server","src", "config", "database.js"),
+ //modelos da tabela
+     "models-path": path.resolve("server","src", "models"),
+  // popula o banco de dados para testar
+  "seeders-path": path.resolve("server","src", "database", "seeders"),
+ 
+ // modela o banco de dados 
+  "migrations-path": path.resolve("server","src", "database", "migrations"),
+};
